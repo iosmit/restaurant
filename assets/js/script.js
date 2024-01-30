@@ -54,6 +54,9 @@ addEventOnElements(navTogglers, "click", toggleNavbar);
 const header = document.querySelector("[data-header]");
 const backTopBtn = document.querySelector("[data-back-top-btn]");
 
+// Remove "active" class initially
+backTopBtn.classList.remove("active");
+
 let lastScrollPos = 0;
 
 const hideHeader = function () {
