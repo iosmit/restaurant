@@ -27,6 +27,42 @@ const addEventOnElements = function (elements, eventType, callback) {
   }
 }
 
+/**
+ * POPUP
+ */
+
+/** ANOTHER WAY OF ADDING POPUP
+const orderButton = document.getElementById('orderfoodbutton');
+orderButton.addEventListener('click', showOrderPage);
+
+const orderButtonWithIcon = document.getElementById('orderfoodbuttonwithicon');
+orderButtonWithIcon.addEventListener('click', showOrderPage);
+
+function showOrderPage() {
+  document.body.classList.add("active-popup");
+  document.body.style.overflow = 'hidden';
+}
+
+const closeButton = document.querySelector(".popup .close-btn");
+closeButton.addEventListener('click', closeOrderPage);
+
+function closeOrderPage(){
+  document.body.classList.remove("active-popup");
+  document.body.style.overflow='auto';
+}
+
+*/
+
+document.querySelector("#orderfoodbutton").addEventListener("click",function(){
+  document.body.classList.add("active-popup");
+  document.body.style.overflow = 'hidden';
+});
+
+document.querySelector(".popup .close-btn").addEventListener("click",function(){
+  document.body.classList.remove("active-popup");
+  document.body.style.overflow = 'auto';
+});
+
 
 
 /**

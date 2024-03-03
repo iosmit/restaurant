@@ -16,7 +16,16 @@
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+  <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#000000">
+  <link rel="shortcut icon" href="./favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="msapplication-config" content="./favicon/browserconfig.xml">
+  <meta name="theme-color" content="#000000">
 
   <!-- 
     - google font link
@@ -33,9 +42,11 @@
   <!-- 
     - preload images
   -->
+
   <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
   <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
   <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+
 
 </head>
 
@@ -51,7 +62,17 @@
   </div>
 
 
+  <!---
+    - #POPUP
+  -->
 
+  <div class="popup">
+    <button class="close-btn">&times</button>
+    <h2>This is popup title</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac consequat leo. Etiam arcu nunc, egestas in lobortis ac, scelerisque et nisi.
+    </p>
+  </div>
 
 
   <!-- 
@@ -78,7 +99,7 @@
           <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
         </div>
 
-        <span class="span">Mon-Sat : 11:30 am – 10:00 pm //
+        <span class="span">Mon-Sat: 11:30 am – 10:00 pm &nbsp;
           Sun: 11:30 am – 07:00 pm
         </span>
       </div>
@@ -156,6 +177,14 @@
           </li>
 
           <li class="navbar-item">
+            <a href="story.html#photos" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Photos</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
             <a href="index.html#contact" class="navbar-link hover-underline">
               <div class="separator"></div>
 
@@ -189,10 +218,10 @@
 
       </nav>
 
-      <a href="https://gururestaurant.hrpos.heartland.us/" class="btn btn-secondary">
-        <span class="text text-1">Order Online</span>
+      <a href="#" class="btn btn-secondary" id="orderfoodbutton">
+        <span class="text text-1">Order Food</span>
 
-        <span class="text text-2" aria-hidden="true">Order Online</span>
+        <span class="text text-2" aria-hidden="true">Order Food</span>
       </a>
 
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
@@ -212,7 +241,7 @@
   <br>
   <br>
      
-  <main>
+  <main class="main">
     <article>
 
      <!-- 
@@ -2971,6 +3000,10 @@
 
           <li>
             <a href="story.html" class="label-2 footer-link hover-underline">Our Story</a>
+          </li>
+
+          <li>
+            <a href="story.html#photos" class="label-2 footer-link hover-underline">Photos</a>
           </li>
 
           <li>

@@ -41,11 +41,11 @@
 
   <!-- 
     - preload images
-  -->
+-->
   <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
   <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
   <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
-
+  
 </head>
 
 <body id="top">
@@ -59,6 +59,41 @@
     <div class="circle"></div>
   </div>
 
+     <!---
+    - #INITAL POPUP 
+  -->
+
+
+
+
+   <!---
+    - #ORDER POPUP 
+  -->
+
+  <div class="popup">
+    
+    <button class="close-btn">&times</button>
+
+    <h2 class="headline-1 text-center">Order</h2>
+    <div></div>
+    <a href="https://www.ezcater.com/catering/pvt/guru-restaurant-3" class="btn btn-secondary">
+      <span class="text text-1">Delivery</span>
+      <span class="text text-2" aria-hidden="true">Order Delivery</span>
+    </a>
+    <div></div>
+    <a href="https://gururestaurant.hrpos.heartland.us/" class="btn btn-secondary">
+      <span class="text text-1">Carryout</span>
+      <span class="text text-2" aria-hidden="true">Order Carryout</span>
+    </a>
+    
+    <p>Direction to Restaurant
+      <a class="popupaddress" href='https://www.google.com/maps/place/Guru+Indian+Restaurant/@28.537608,-81.7416151,17z/data=!3m1!5s0x88e78ede3d1d340f:0xdd80936f6920c030!4m15!1m8!3m7!1s0x88e78ede229e4aa1:0xa6b838a100fa789f!2s2400+S+Hwy+27+Suite+101,+Clermont,+FL+34711!3b1!8m2!3d28.537608!4d-81.7390402!16s%2Fg%2F11nssdx954!3m5!1s0x88e78ede2f3b4cab:0x31eebfba66718af4!8m2!3d28.537608!4d-81.7390402!16s%2Fg%2F11b66f47c2?entry=ttu'>
+      <a class="popupaddress" href='https://maps.apple.com/?address=2400%20US-27%20S,%20Unit%20101,%20Clermont,%20FL%2034711,%20United%20States&auid=6775273759424614393&ll=28.537514,-81.739097&lsp=9902&q=Guru%20Indian%20Restaurant%20Clermont'>2400 S Hwy 27 Suite 101, Clermont, FL 34711</a></a>
+    </p>
+    
+    </div>  
+      
+    
 
   <!-- 
     - #TOP BAR
@@ -84,7 +119,7 @@
           <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
         </div>
 
-        <span class="span">Mon-Sat : 11:30 am – 10:00 pm //
+        <span class="span">Mon-Sat: 11:30 am – 10:00 pm &nbsp;
           Sun: 11:30 am – 07:00 pm
         </span>
       </div>
@@ -112,7 +147,6 @@
 
     </div>
   </div>
-
 
   <!-- 
     - #HEADER
@@ -162,6 +196,14 @@
           </li>
 
           <li class="navbar-item">
+            <a href="story.html#photos" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Photos</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
             <a href="#contact" class="navbar-link hover-underline">
               <div class="separator"></div>
 
@@ -195,10 +237,10 @@
 
       </nav>
 
-      <a href="https://gururestaurant.hrpos.heartland.us/" class="btn btn-secondary">
-        <span class="text text-1">Order Online</span>
+      <a href="#" class="btn btn-secondary" id="orderfoodbutton">
+        <span class="text text-1">Order Food</span>
 
-        <span class="text text-2" aria-hidden="true">Order Online</span>
+        <span class="text text-2" aria-hidden="true">Order Food</span>
       </a>
 
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
@@ -213,7 +255,8 @@
   </header>
 
 
-  <main>
+  <main class="main">
+
     <article>
 
       <!-- 
@@ -307,12 +350,13 @@
           <ion-icon name="chevron-forward"></ion-icon>
         </button>
 
-        <a href="https://www.ezcater.com/catering/pvt/guru-restaurant-3" class="hero-btn has-after">
+        
+        <a href="#" class="hero-btn has-after" id="orderfoodbuttonwithicon">
           <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
 
-          <span class="label-2 text-center span">Order Catering</span>
+          <span class="label-2 text-center span">Order Food</span>
         </a>
-
+        
       </section>
 
 
@@ -374,7 +418,13 @@
       <section class="section testi text-center has-bg-image"
         style="background-image: url('./assets/images/testimonials.jpg')" aria-label="testimonials">
         <div class="container">
-          <h2 class="headline-1 text-center">Reviews</h2><br>
+          <br>
+          <h2 class="headline-1 text-center">Reviews</h2>
+          <h3>(Leave us a review on Facebook)</h3><br>
+          <div class="profile">
+            <a href="https://www.facebook.com/289717221229425"><img src="./assets/images/facebooklogo.png" width="100" height="100"  alt="leave a facebook review"
+              class="img"></a>
+          </div><br>
           <div class="quote">”</div>
 
           <p class="headline-2 testi-text">
@@ -389,9 +439,6 @@
           </div>
 
           <div class="profile">
-            <img src="./assets/images/davidcustomer.jpg" width="100" height="100"  alt="David Thurlow"
-              class="img">
-
             <p class="label-2 profile-name">David Thurlow</p>
           </div>
 
@@ -409,7 +456,7 @@
 
           <div class="form reservation-form bg-black-10">
 
-            <form action="" class="form-left">
+            <form action="https://formsubmit.co/azosnu@gmail.com" method="POST" class="form-left">
 
               <h2 class="headline-1 text-center">Send us a message</h2>
 
@@ -505,14 +552,24 @@
               </a>
              
 
-              <p class="contact-label">Monday to Saturday Hours:</p>
+              <p class="contact-label">Monday to Saturday Hours</p>
               <p class="body-4">
                 11:30 am – 10:00 pm
               </p>
 
-              <p class="contact-label">Sunday Hours:</p>
+              <p class="contact-label">Sunday Hours</p>
               <p class="body-4">
                 11:30 am – 07:00 pm
+              </p>
+
+              <p class="contact-label">Socials</p>
+              <p class="body-4">
+                <div class="profile">
+                 <a href="https://www.facebook.com/289717221229425"><img src="./assets/images/facebooklogo.png" width="100" height="100"  alt="leave a facebook review"
+                  class="img"></a>
+                  <a href="https://g.co/kgs/zjHcrDc"><img src="./assets/images/googlelogo.png" width="100" height="100"  alt="google guru restaurant business profile"
+                    class="img"></a>
+              </div>
               </p>
             </div>
 
@@ -583,6 +640,10 @@
           </li>
 
           <li>
+            <a href="story.html#photos" class="label-2 footer-link hover-underline">Photos</a>
+          </li>
+
+          <li>
             <a href="#contact" class="label-2 footer-link hover-underline">Contact</a>
           </li>
 
@@ -605,7 +666,7 @@
       <div class="footer-bottom">
 
         <p class="copyright">
-          &copy; 2024 Guru Restaurant. All Rights Reserved</a>
+          &copy; 2024 Guru Restaurant <br> <a href="https://buildmemywebsite.com">buildmemywebsite.com</a>
         </p>
 
       </div>
@@ -632,6 +693,15 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+  <script>
+  document.querySelector("#orderfoodbuttonwithicon").addEventListener("click",function(){
+  document.body.classList.add("active-popup");
+  document.body.style.overflow = 'hidden';
+});
+  </script>
 
 </body>
 
